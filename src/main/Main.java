@@ -3,6 +3,7 @@ package main;
 
 import algorithms.sorting.BubbleSort;
 import algorithms.sorting.SelectionSort;
+import algorithms.sorting.InsertionSort;
 import algorithms.searching.BinarySearch;
 import utils.ArrayUtils;
 
@@ -15,6 +16,9 @@ public class Main {
         // Example array
         int[] first = {5, 2, 9, 1, 5, 6};
 		int[] second = {6, 3, 8, 4, 3, 4, 2};
+		int[] third = {5, 2, 78, 45, 3, 8, 9, 2};
+
+//-----
 
         System.out.println("The original array:");
         ArrayUtils.printArray(first);
@@ -25,6 +29,8 @@ public class Main {
         System.out.println("After sorting:");
         ArrayUtils.printArray(first);
 
+//-----
+
 		System.out.println("\nThe original array:");
 		ArrayUtils.printArray(second);
 
@@ -34,6 +40,19 @@ public class Main {
 		System.out.println("After sorting:");
 		ArrayUtils.printArray(second);
 
+//-----
+
+		System.out.println("\nThe original array:");
+		ArrayUtils.printArray(third);
+
+		System.out.println("Sorting with InsertionSort...");
+		SelectionSort.sort(third);
+
+		System.out.println("After sorting:");
+		ArrayUtils.printArray(third);
+
+//-----
+//-----
 
         System.out.println("\nSearching in different ways: \n");
 
